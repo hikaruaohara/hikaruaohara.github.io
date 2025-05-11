@@ -3,87 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>青原 光 - ポートフォリオ</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>青原 光</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .profile-icon {
+            font-size: 5rem;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        
+        .position {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            margin: 30px 0;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .info-item i {
+            margin-right: 10px;
+            color: #2563eb;
+            font-size: 1.2rem;
+        }
+        
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-links a {
+            color: #2563eb;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>青原 光</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">ホーム</a></li>
-                    <li><a href="about.html">プロフィール</a></li>
-                    <li><a href="projects.html">プロジェクト</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h2>こんにちは、青原 光です</h2>
-            <p>iOSエンジニア / Swift開発者</p>
-            <a href="projects.html" class="btn">プロジェクトを見る</a>
-        </div>
-    </section>
-
-    <section class="skills">
-        <div class="container">
-            <h2>スキル</h2>
-            <div class="skills-container">
-                <div class="skill-box">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>iOS開発</h3>
-                    <p>Swift, SwiftUI, UIKit, Core Bluetooth</p>
-                </div>
-                <div class="skill-box">
-                    <i class="fas fa-sitemap"></i>
-                    <h3>アーキテクチャ</h3>
-                    <p>MVVM, クリーンアーキテクチャ, MVC</p>
-                </div>
-                <div class="skill-box">
-                    <i class="fas fa-tools"></i>
-                    <h3>開発ツール</h3>
-                    <p>Git, GitHub, Figma</p>
-                </div>
+    <main class="card">
+        <i class="fas fa-user-circle profile-icon"></i>
+        <h1>青原 光</h1>
+        <p class="position">iOSエンジニア</p>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>aoharahikaru@gmai.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>名古屋市</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <p>名古屋工業大学</p>
             </div>
         </div>
-    </section>
-
-    <section class="featured-projects">
-        <div class="container">
-            <h2>注目のプロジェクト</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <img src="images/project-1.jpg" alt="PredicTalk">
-                    <h3>PredicTalk</h3>
-                    <p>言語モデルを活用して発話予測を行い、英会話等をサポートするアプリ。JPHACKS2023で複数の賞を受賞。</p>
-                    <a href="projects.html#predictalk" class="btn-small">詳細を見る</a>
-                </div>
-                <div class="project-card">
-                    <img src="images/project-2.jpg" alt="Tune the Tone">
-                    <h3>Tune the Tone</h3>
-                    <p>RGBスライダーで対象の色を再現するゲームアプリ。MVVMアーキテクチャとSwiftUIを採用。</p>
-                    <a href="projects.html#tunethetone" class="btn-small">詳細を見る</a>
-                </div>
-            </div>
+        
+        <div class="social-links">
+            <a href="https://github.com/hikaruaohara" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hikaruaohara/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/hikaruaohara" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/hikaruaohara" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/hikaruaohara/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/hikaruaohara" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
+        
+        <footer>
             <p>&copy; 2025 青原 光. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+        </footer>
+    </main>
 </body>
 </html>
