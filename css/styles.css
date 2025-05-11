@@ -578,3 +578,17 @@ footer p {
         flex-direction: column;
     }
 }
+
+/* カスタムスタイル追加 */
+.center-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.toeic-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin: 20px auto;
+}
